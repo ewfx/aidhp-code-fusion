@@ -21,6 +21,9 @@ This solution leverages **Generative AI techniques** to enhance personalization 
 ## 🎥 Demo
 PPT attached under C:\Users\Hp\OneDrive\Desktop\TechHackathon\develop\artifacts\demo\CodeFusion.pptx
 
+Demo video attached under
+C:\Users\Hp\OneDrive\Desktop\TechHackathon\develop\artifacts\demo\CodeFusion-Demo.mp4
+
 
 ## 💡 Inspiration
 In today's world, businesses strive to improve customer experience through **personalized recommendations**. By leveraging AI, we can enhance how businesses interact with customers, predict preferences, and offer **tailored product suggestions** that improve engagement and retention.
