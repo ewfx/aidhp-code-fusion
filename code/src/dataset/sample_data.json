@@ -1,22 +1,52 @@
-{
-    "Customer ID": [101, 102, 103, 104, 105],
-    "Purchase History": [
-        ["Laptop", "Mouse"],
-        ["Shoes", "Jacket"],
-        ["Phone", "Earbuds"],
-        ["Camera", "Tripod"],
-        ["Watch", "Sunglasses"]
-    ],
-    "Sentiment Score": [0.8, -0.4, 0.5, 0.9, 0.3],
-    "Social Media Activity": ["High", "Low", "Medium", "High", "Low"],
-    "Age": [25, 34, 29, 40, 22],
-    "Gender": ["Male", "Female", "Male", "Female", "Male"],
-    "Interests": [
-        ["Tech", "Gaming"],
-        ["Fashion", "Winter Wear"],
-        ["Mobile", "Accessories"],
-        ["Photography", "Gadgets"],
-        ["Luxury", "Travel"]
-    ],
-    "Engagement Score": [90, 50, 70, 85, 60]
-}
+[
+    {
+        "Customer Name": "Aisha Malik",
+        "Purchase History": ["Laptop", "Mouse"],
+        "Sentiment Score": 0.8,
+        "Social Media Activity": "High",
+        "Age": 25,
+        "Gender": "Female",
+        "Interests": ["Tech", "Gaming"],
+        "Engagement Score": 90
+    },
+    {
+        "Customer Name": "Ethan Carter",
+        "Purchase History": ["Shoes", "Jacket"],
+        "Sentiment Score": -0.4,
+        "Social Media Activity": "Low",
+        "Age": 34,
+        "Gender": "Male",
+        "Interests": ["Fashion", "Winter Wear"],
+        "Engagement Score": 50
+    },
+    {
+        "Customer Name": "Sofia Rodriguez",
+        "Purchase History": ["Phone", "Earbuds"],
+        "Sentiment Score": 0.5,
+        "Social Media Activity": "Medium",
+        "Age": 29,
+        "Gender": "Female",
+        "Interests": ["Mobile", "Accessories"],
+        "Engagement Score": 70
+    },
+    {
+        "Customer Name": "Liam Harper",
+        "Purchase History": ["Camera", "Tripod"],
+        "Sentiment Score": 0.9,
+        "Social Media Activity": "High",
+        "Age": 40,
+        "Gender": "Male",
+        "Interests": ["Photography", "Gadgets"],
+        "Engagement Score": 85
+    },
+    {
+        "Customer Name": "Nia Thompson",
+        "Purchase History": ["Watch", "Sunglasses"],
+        "Sentiment Score": 0.3,
+        "Social Media Activity": "Low",
+        "Age": 22,
+        "Gender": "Female",
+        "Interests": ["Luxury", "Travel"],
+        "Engagement Score": 60
+    }
+]
