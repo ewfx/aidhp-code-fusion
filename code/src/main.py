@@ -49,7 +49,7 @@ def main():
         if client:
             st.success("OpenAI Connected")
         else:
-            st.info("Using enhanced simulated responses")
+            st.info("Using enhanced simulated responses since API key is not found...!")
     
     # Main content
     col1, col2 = st.columns([1, 2])
