@@ -1,0 +1,22 @@
+{
+    "Customer ID": [101, 102, 103, 104, 105],
+    "Purchase History": [
+        ["Laptop", "Mouse"],
+        ["Shoes", "Jacket"],
+        ["Phone", "Earbuds"],
+        ["Camera", "Tripod"],
+        ["Watch", "Sunglasses"]
+    ],
+    "Sentiment Score": [0.8, -0.4, 0.5, 0.9, 0.3],
+    "Social Media Activity": ["High", "Low", "Medium", "High", "Low"],
+    "Age": [25, 34, 29, 40, 22],
+    "Gender": ["Male", "Female", "Male", "Female", "Male"],
+    "Interests": [
+        ["Tech", "Gaming"],
+        ["Fashion", "Winter Wear"],
+        ["Mobile", "Accessories"],
+        ["Photography", "Gadgets"],
+        ["Luxury", "Travel"]
+    ],
+    "Engagement Score": [90, 50, 70, 85, 60]
+}
