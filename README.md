@@ -49,7 +49,7 @@ In today's world, businesses strive to improve customer experience through **per
    https://github.com/ewfx/aidhp-code-fusion.git
   
 2. **Navigate to the project directory**
-   cd TechHackathon
+   cd CodeFusion
 
 3. **Install dependencies**   
    pip install -r requirements.txt
