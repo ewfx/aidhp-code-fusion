@@ -19,6 +19,7 @@ Modern customers expect personalized experiences that cater to their unique pref
 This solution leverages **Generative AI techniques** to enhance personalization and provide **real-time insights** for businesses to optimize customer engagement.
 
 ## 🎥 Demo
+PPT attached under C:\Users\Hp\OneDrive\Desktop\TechHackathon\develop\artifacts\demo\CodeFusion.pptx
 
 
 ## 💡 Inspiration
@@ -60,15 +61,14 @@ In today's world, businesses strive to improve customer experience through **per
 
 ## 🏗️ Tech Stack
 - 🔹 **Frontend:** Streamlit
-- 🔹 **Backend:** Python (FastAPI for API integration if needed)
-- 🔹 **Database:** PostgreSQL / Firebase (for customer data storage)
+- 🔹 **Backend:** Python, OpenAPI
 - 🔹 **AI & ML:** Sentence-Transformers, Cosine Similarity, OpenAI APIs
 - 🔹 **Visualization:** Plotly, Matplotlib
 
 ## 👥 Team
-- **Sowmya Badana** - 
-- **Dheeraj Kura** - 
-- **Madhavi Papshetty** - 
+- **Sowmya Badana**  
+- **Dheeraj Kura** 
+- **Madhavi Papshetty**  
 
 ---
 
