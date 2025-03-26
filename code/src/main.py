@@ -23,6 +23,12 @@ def load_all_data():
     similarity_matrix = get_similarity_matrix(embeddings)
     return df, processed_df, model, embeddings, similarity_matrix
 
+# Get API key from secrets.toml
+try:
+    API_KEY = st.secrets["openai_key"]
+except KeyError:
+    API_KEY = None
+
 def main():
     # Set up page title and description
     st.title("🚀 AI-Driven Hyper-Personalization System")
@@ -40,7 +46,11 @@ def main():
         strategy = st.radio("Recommendation Strategy", 
                           ["Hybrid (Recommended)", "Collaborative Filtering", "Contextual"])
         
-        st.info("Using enhanced simulated responses since API key is not found...!")
+        # Show API status
+        if API_KEY:
+            st.success("API key found - using real recommendation engine!")
+        else:
+            st.info("Using enhanced simulated responses since API key is not found...!")
     
     # Create two-column layout for customer profile and recommendations
     col1, col2 = st.columns([1, 2])
@@ -62,7 +72,7 @@ def main():
         if st.button("Generate Recommendations", type="primary"):
             with st.spinner('Analyzing customer data...'):
                 st.subheader("System Recommendations")
-                recs = recommend_products(customer_data, df, similarity_matrix, strategy.split()[0].lower())
+                recs = recommend_products(customer_data, df, similarity_matrix, strategy.split()[0].lower(), API_KEY)
                 if recs:
                     for rec in recs:
                         st.markdown(f"🎯 **{rec['product']}** (Score: {rec['score']:.2f}) - {rec['reason']}")
@@ -108,7 +118,7 @@ def main():
             # Display recommendations for new customer
             with new_col2:
                 st.subheader("✨ Recommendations for New Customer")
-                new_recs = recommend_new_customer(new_customer_data)
+                new_recs = recommend_new_customer(new_customer_data, API_KEY)
                 if new_recs:
                     for rec in new_recs:
                         st.markdown(f"🎯 **{rec['product']}** (Score: {rec['score']:.2f}) - {rec['reason']}")

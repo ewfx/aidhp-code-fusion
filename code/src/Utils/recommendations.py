@@ -3,10 +3,34 @@ import numpy as np
 import plotly.express as px
 from datetime import datetime
 import random
+import requests  # New import for API calls
 
 # Generate product recommendations for existing customers
-def recommend_products(customer_data, df, similarity_matrix, strategy="hybrid"):
-    # Find index of selected customer
+def recommend_products(customer_data, df, similarity_matrix, strategy="hybrid", api_key=None):
+    if api_key:
+        # API-based recommendation logic
+        try:
+            # Prepare payload for API request
+            payload = {
+                "customer_data": customer_data,
+                "strategy": strategy,
+                "similarity_data": similarity_matrix[idx].tolist() if 'idx' in locals() else []
+            }
+            headers = {"Authorization": f"Bearer {api_key}"}
+            response = requests.post(
+                "https://api.recommendation-engine.com/recommend",  # Hypothetical API endpoint
+                json=payload,
+                headers=headers,
+                timeout=10
+            )
+            response.raise_for_status()
+            api_recs = response.json().get("recommendations", [])
+            return api_recs  # Assuming API returns in compatible format
+        except Exception as e:
+            print(f"API request failed: {e}")
+            # Fallback to simulated responses if API fails
+
+    # Existing simulated response logic
     idx = df.index[df["Customer Name"] == customer_data["Customer Name"]].tolist()[0]
     
     # Get similar users using collaborative filtering
@@ -72,7 +96,26 @@ def recommend_products(customer_data, df, similarity_matrix, strategy="hybrid"):
     return sorted(final_recs, key=lambda x: x["score"], reverse=True)[:5]
 
 # Generate recommendations for new customers based on interests
-def recommend_new_customer(customer_data):
+def recommend_new_customer(customer_data, api_key=None):
+    if api_key:
+        # API-based recommendation logic
+        try:
+            payload = {"customer_data": customer_data}
+            headers = {"Authorization": f"Bearer {api_key}"}
+            response = requests.post(
+                "https://api.recommendation-engine.com/recommend-new",  # Hypothetical API endpoint
+                json=payload,
+                headers=headers,
+                timeout=10
+            )
+            response.raise_for_status()
+            api_recs = response.json().get("recommendations", [])
+            return api_recs  # Assuming API returns in compatible format
+        except Exception as e:
+            print(f"API request failed: {e}")
+            # Fallback to simulated responses if API fails
+
+    # Existing simulated response logic
     # Map of interests to potential products
     interest_map = {
         "Tech": ["Wireless Keyboard", "External SSD"],
