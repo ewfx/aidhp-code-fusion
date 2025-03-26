@@ -19,10 +19,11 @@ Modern customers expect personalized experiences that cater to their unique pref
 This solution leverages **Generative AI techniques** to enhance personalization and provide **real-time insights** for businesses to optimize customer engagement.
 
 ## 🎥 Demo
-PPT attached under C:\Users\Hp\OneDrive\Desktop\TechHackathon\develop\artifacts\demo\CodeFusion.pptx
+PPT attached under 
+artifacts\demo\CodeFusion.pptx
 
 Demo video attached under
-C:\Users\Hp\OneDrive\Desktop\TechHackathon\develop\artifacts\demo\CodeFusion-Demo.mp4
+artifacts\demo\CodeFusion-Demo.mp4
 
 
 ## 💡 Inspiration
