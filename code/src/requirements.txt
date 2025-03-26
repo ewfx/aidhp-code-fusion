@@ -1,7 +1,6 @@
-pandas
-numpy
 streamlit
-scikit-learn
+pandas
 sentence-transformers
-openai
+scikit-learn
 plotly
+numpy
