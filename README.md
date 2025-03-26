@@ -58,8 +58,11 @@ In today's world, businesses strive to improve customer experience through **per
 
 3. **Install dependencies**   
    pip install -r requirements.txt
+   
+4. **Place API Key**   
+   under Code/src/streamlit/secrets.toml file update API Key before running
  
-4. **Run the application**
+5. **Run the application**
    streamlit run main.py
 
 
